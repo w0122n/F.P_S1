@@ -12,10 +12,12 @@ public class P15_U3 {
 
     public static void main(String[] args) {
         
-        int c = 1;
+        int c = 1, suma = 0;
         while (c<=20){
-            System.out.println(c);
-            c++;
+            suma = suma + c;
+            System.out.println("Suma = " + suma);
+            c++;  
         }
+        
     }
 }
