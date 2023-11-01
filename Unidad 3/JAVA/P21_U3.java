@@ -4,13 +4,25 @@
 
 package com.mycompany.p21_u3;
 
+import java.util.Scanner;
+
 /**
  *
- * @author hannm
+ * @author LaboratorioLTI2
  */
 public class P21_U3 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner sc = new Scanner (System.in);
+       
+        int num, cb;
+        
+        do{
+            System.out.println("Ingresa un número: ");
+            num = sc.nextInt();
+            cb = num * num * num;
+                System.out.println("El cubo de " + num + " es: " + cb);
+            
+        } while (num > 0);  
     }
 }
