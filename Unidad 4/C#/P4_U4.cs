@@ -7,7 +7,7 @@ namespace MyApp
         static void Main(string[] args)
         {
 
-            int n=0, total=0, num;
+            int n=0, num;
             Console.WriteLine("Ingresa los números a procesar");
             num = Convert.ToInt32(Console.ReadLine());
 
@@ -15,11 +15,16 @@ namespace MyApp
 
             for (int ne = 0; ne < neg.Length; ne++)
             {
-                Console.WriteLine("Ingrese número negativo");
+                Console.WriteLine("Escribe un número en indice " + ne + ": "); ;
                 neg[ne] = Convert.ToInt32(Console.ReadLine());
 
+                if (neg[ne]<0) 
+                { 
+                  n++;
+                }
+                Console.WriteLine("Hay un total de " + n + " números negativos.");
             }
-            Console.WriteLine("Hayn un total de ");
+   
         }
     }
 }
