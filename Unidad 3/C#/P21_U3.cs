@@ -7,14 +7,14 @@ namespace MyApp // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
             int num, cb;
-            Console.WriteLine("Ingresa un número: ");
-            num = Convert.ToInt32(Console.ReadLine());
-
-            while (num > 0)
+            do
             {
+                Console.WriteLine("Ingresa un número: ");
+                num = Convert.ToInt32(Console.ReadLine());
                 cb = num * num * num;
                 Console.WriteLine("El cubo de " + num + " es: " + cb);
-            }
+
+            } while (num > 0);
         }
     }
 }

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.p21_u3;
+package com.mycompany.p22_u3;
 
 import java.util.Scanner;
 
@@ -10,19 +10,19 @@ import java.util.Scanner;
  *
  * @author LaboratorioLTI2
  */
-public class P21_U3 {
+public class P22_U3 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
-       
-        int num, cb;
+        
+        int i=0, num, s=0;
         
         do{
-            System.out.println("Ingresa un número: ");
+            System.out.println("Ingrese un valor: (Ingrese 0 para terminar)");
             num = sc.nextInt();
-            cb = num * num * num;
-                System.out.println("El cubo de " + num + " es: " + cb);
-            
-        } while (num > 0);  
+            s=s+num;
+            System.out.println(s);
+           
+        } while(num!=0);
     }
 }
